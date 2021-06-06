@@ -63,7 +63,7 @@ gitalk:
   clientSecret: 9b7054f38c7bb55b35f08b62b57b266468147359    #生成的clientSecret
   repo: veltgop.github.io    #仓库名称
   owner: VeltGop    # github用户名
-  admin: diamond-weiqu
+  admin: VeltGop
   distractionFreeMode: true # 是否启用类似FB的阴影遮罩
 
 
