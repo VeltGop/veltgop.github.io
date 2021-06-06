@@ -13,3 +13,42 @@ tags:
     - moremikumaster
 ---
 # [原创][VeltGop工作室][Forge端模组]更多米神模组————当岷叔视频里的更多米神变成现实...
+# [原创][VeltGop工作室][Forge端模组]更多米神模组————当岷叔视频里的更多米神变成现实...
+
+|独立Mod发布|
+|-|-|-|
+|中文名称:	更多米神|
+|英文名称:	More Miku_Master|
+|来源:	原创|
+|Mod类型:	非核心Mod » 冒险|
+|Mod版本:	Beta-0.0.1|
+|适用版本:	1.15.2|
+|Modloader需求:	Forge |
+|最后更新:	2021-06-06|
+|原帖地址:	|
+|语言支持:	简体中文 English |
+|与多人游戏兼容性:	完全兼容原版多人游戏 |
+|安装方法:	拖入mods文件夹（需要API支持） |
+|下载地址:	本帖子|
+
+> 本帖最后由 VeltGop-开发者中心 于 2021-06-06 13:42 编辑
+
+::: hljs-center
+
+### 米神是谁？
+
+:::
+> [米神是](https://space.bilibili.com/1993302)BiliBili与MC著名UP主 米子山民 主要合作人
+
+::: hljs-center
+![https://www.veltgop.xyz/images/184641qcbjwr6wjhxx6wgc.png](1)
+### 更多米神是什么?
+
+:::
+> 岷叔常常在各种物品后面加上一个“米神”，比如去挖点钻石米神
+岷叔本意为：去挖点钻石，米神
+却被弹幕理解为：去挖点，钻石米神
+
+![https://www.veltgop.xyz/images/184641qcbjwr6wjhxx6wgc.png](1)
+
+此模组用到了米神皮肤，已授权！
