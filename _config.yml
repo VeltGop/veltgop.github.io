@@ -5,7 +5,7 @@ header-img: img/home-bg-he.png
 email: jjjjjasxs@163.com
 description: "VeltGop 论坛"
 keyword: "vmc, vmcbbs, vmc论坛, VeltGop, veltgop"
-url: "http://bbs.veltgop.xyz"          # your host, for absolute URL
+url: "http://veltgop.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/Veltgop/veltgop.github.io.git" #code repository | 代码仓库
 
