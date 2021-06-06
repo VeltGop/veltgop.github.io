@@ -1,18 +1,18 @@
 # Site settings | 网站设置
-title: RainbomSea
-SEOTitle: RainbomSea的博客 | RaimbomSea
+title: Veltgop - 论坛
+SEOTitle: Veltgop - 论坛 | VeltGop
 header-img: img/home-bg-he.png
-email: RainbomSea@qq.com
-description: "RainbomSea的博客"
-keyword: "RainbomSea, RainbomSea的博客, rainbom sea, rainbomsea, Python blog"
-url: "http://RainbomSea.github.io"          # your host, for absolute URL
+email: jjjjjasxs@163.com
+description: "VeltGop 论坛"
+keyword: "vmc, vmcbbs, vmc论坛, VeltGop, veltgop"
+url: "http://bbs.veltgop.xyz"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/RainbomSea/RainbomSea.github.io.git" #code repository | 代码仓库
+github_repo: "https://github.com/Veltgop/veltgop.github.io.git" #code repository | 代码仓库
 
 
 # Sidebar settings | 侧边栏设置
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "就算这样,也要笑着去努力啊!"
+sidebar-about-description: "就算这样，也不能放弃高考!高考学子们，VMC在你们背后！"
 sidebar-avatar: /img/head.jpg      # 头像
 
 
@@ -20,7 +20,8 @@ sidebar-avatar: /img/head.jpg      # 头像
 
 
 # SNS settings | 社交网络设置
-github_username: RainbomSea
+github_username: Veltgop
+bilibili_username: 564302397
 
 
 
@@ -58,11 +59,11 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    # 是否开启Gitalk评论
-  clientID: 99ecf1fdc9b7e357ebb7                            #生成的clientID
-  clientSecret: 2670daea0c10372dd0296c371edc5ee4e73db43f    #生成的clientSecret
-  repo: RainbomSea.github.io    #仓库名称
-  owner: RainbomSea    # github用户名
-  admin: RainbomSea
+  clientID: 6a89e6cc230d7872ad39                            #生成的clientID
+  clientSecret: 9b7054f38c7bb55b35f08b62b57b266468147359    #生成的clientSecret
+  repo: veltgop.github.io    #仓库名称
+  owner: Veltgop    # github用户名
+  admin: Veltgop
   distractionFreeMode: true # 是否启用类似FB的阴影遮罩
 
 
