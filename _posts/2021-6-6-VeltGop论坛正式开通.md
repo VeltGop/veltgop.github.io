@@ -8,6 +8,7 @@ header-img: img/post-web.jpg
 catalog: true
 tags:
     - bbs
+    - VeltGop
 ---
 
 # VMC论坛开通！
