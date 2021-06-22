@@ -89,7 +89,7 @@ service-worker: true
 # Friends
 friends: [
     {
-            title: "VeltGop官网",
-            href: "https://www.veltgop.xyz"
-      }
+        title: "VeltGop-Studio",
+        href: "https://www.veltgop.xyz"
+    }
 ]
