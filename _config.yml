@@ -91,13 +91,11 @@ friends: [
     {
         title: "GitHub·VeltGop",
         href: "https://github.com/Veltgop"
-    }
-      {
+    
           title: "VeltGop论坛",
           href: "https://bbs.veltgop.xyz"
-      }
-        {
+
             title: "VeltGop官网",
             href: "https://www.veltgop.xyz"
-        }
+      }
 ]
