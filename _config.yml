@@ -59,8 +59,8 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    # 是否开启Gitalk评论
-  clientID: c20f7e88b8196e25440f                            #生成的clientID
-  clientSecret: adec932f61117c6045858645bb80b50a2f9e1a87    #生成的clientSecret
+  clientID: 6a89e6cc230d7872ad39                            #生成的clientID
+  clientSecret: 9b7054f38c7bb55b35f08b62b57b266468147359    #生成的clientSecret
   repo: veltgop.github.io    #仓库名称
   owner: VeltGop    # github用户名
   admin: diamond-weiqu    #管理员
@@ -90,6 +90,14 @@ service-worker: true
 friends: [
     {
         title: "GitHub·VeltGop",
-        href: "http://veltgop.github.io"
+        href: "https://github.com/Veltgop"
     }
+      {
+          title: "VeltGop论坛",
+          href: "https://bbs.veltgop.xyz"
+      }
+        {
+            title: "VeltGop官网",
+            href: "https://www.veltgop.xyz"
+        }
 ]
