@@ -59,7 +59,7 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    # 是否开启Gitalk评论
-  clientID: 6a89e6cc230d7872ad39                            #生成的clientID
+  clientID: 6a89e6cc230d7872ad39                           #生成的clientID
   clientSecret: 9b7054f38c7bb55b35f08b62b57b266468147359    #生成的clientSecret
   repo: veltgop.github.io    #仓库名称
   owner: VeltGop    # github用户名
