@@ -84,32 +84,7 @@ layout: default
 				</ul>
 
 
-				<!--Gitalk评论start  -->
-				{% if site.gitalk.enable %}
-				<!-- 引入Gitalk评论插件  -->
-				<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-				<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-				<div id="gitalk-container"></div>
-				<!-- 引入一个生产md5的js，用于对id值进行处理，防止其过长 -->
-				<!-- Thank DF:https://github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538 -->
-				<script src="{{ site.baseurl }}/js/md5.min.js"></script>
-				<script type="text/javascript">
-					var gitalk = new Gitalk({
-						clientID: '{{site.gitalk.clientID}}',
-						clientSecret: '{{site.gitalk.clientSecret}}',
-						repo: '{{site.gitalk.repo}}',
-						owner: '{{site.gitalk.owner}}',
-						admin: ['{{site.gitalk.admin}}'],
-						distractionFreeMode: {{ site.gitalk.distractionFreeMode}},
-						id: md5(location.pathname),
-					});
-					gitalk.render('gitalk-container');
-				</script>
-				{% endif %}
-				<!-- Gitalk end -->
-
-			</div>
-			<!--引入验证插件 -->
+							<!--引入验证插件 -->
 			<style>
 .vaptcha-init-main {
     display: table;
@@ -156,18 +131,70 @@ layout: default
 <script src="https://v-cn.vaptcha.com/v3.js"></script>
 <script>
 vaptcha({
-    //配置参数
     vid: '60d2a8f3b5b135863648dac2', // 验证单元id
-    type: 'click', // 展现类型 点击式
-    container: '#vaptchaContainer', // 按钮容器，可为Element 或者 selector
-​
-    ... //其他配置参数省略
+    type: 'click', // 显示类型 点击式
+    scene: 0, // 场景值 默认0
+    container: '#vaptchaContainer', // 容器，可为Element 或者 selector
+    //可选参数
+    //lang: 'auto', // 语言 默认auto,可选值auto,zh-CN,en,zh-TW,jp
+    //https: true, // 使用https 默认 true
+    //style: 'dark' //按钮样式 默认dark，可选值 dark,light
+    //color: '#57ABFF' //按钮颜色 默认值#57ABFF
+    //area: 'auto' //验证节点区域,默认 cn,可选值 auto,sea,na,cn
 }).then(function (vaptchaObj) {
-    vaptchaObj.render()// 调用验证实例 vaptchaObj 的 render 方法加载验证按钮
+    obj = vaptchaObj //将VAPTCHA验证实例保存到局部变量中
+    vaptchaObj.render() // 调用验证实例 vpObj 的 render 方法加载验证按钮
+    //获取token的方式一：
+    //vaptchaObj.renderTokenInput('.login-form')//以form的方式提交数据时，使用此函数向表单添加server,token值
+    //获取token的方式二：
+    vaptchaObj.listen('pass', function () {
 ​
-    ... //其他事件处理
+        serverToken=vaptchaObj.getServerToken()
+​
+        // 验证成功进行后续操作
+        var data = {
+            server:serverToken.server,
+            token: serverToken.token,
+        }
+        $.post('login', data, function (r) {
+            if (r.code !== 200) {
+                console.log('登录失败')
+                vaptchaObj.reset() //重置 VAPTCHA
+            }
+        })
+    })
+    //关闭验证弹窗时触发
+    vaptchaObj.listen('close', function () {
+        //验证弹窗关闭触发
+    })
 })
 </script>
+				<!--Gitalk评论start  -->
+				{% if site.gitalk.enable %}
+				<!-- 引入Gitalk评论插件  -->
+				<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+				<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+				<div id="gitalk-container"></div>
+				<!-- 引入一个生产md5的js，用于对id值进行处理，防止其过长 -->
+				<!-- Thank DF:https://github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538 -->
+				<script src="{{ site.baseurl }}/js/md5.min.js"></script>
+				<script type="text/javascript">
+					var gitalk = new Gitalk({
+						clientID: '{{site.gitalk.clientID}}',
+						clientSecret: '{{site.gitalk.clientSecret}}',
+						repo: '{{site.gitalk.repo}}',
+						owner: '{{site.gitalk.owner}}',
+						admin: ['{{site.gitalk.admin}}'],
+						distractionFreeMode: {{ site.gitalk.distractionFreeMode}},
+						id: md5(location.pathname),
+					});
+					gitalk.render('gitalk-container');
+				</script>
+				{% endif %}
+				<!-- Gitalk end -->
+
+			</div>
+
 			<!-- Side Catalog Container -->
 			{% if page.catalog %}
 			<div class="col-lg-2 col-lg-offset-0 visible-lg-block sidebar-container catalog-container">
